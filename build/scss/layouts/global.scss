@@ -1,0 +1,22 @@
+.list-pag {
+  ul {
+    @extend .pagination;
+    li {
+      cursor: pointer;
+    }
+    .current {
+      padding: 0;
+      div {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        line-height: 1.42857;
+        text-decoration: none;
+        color: white;
+        background-color: #337ab7;
+        border: 1px solid #ddd;
+        margin-left: -1px;
+      }
+    }
+  }
+}

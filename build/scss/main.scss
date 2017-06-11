@@ -1,0 +1,15 @@
+@import "./bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+//common
+@import "./common/variables.scss";
+
+//Components
+@import "./components/typography.scss";
+
+
+//Layouts
+@import "./layouts/global.scss";
+@import "./layouts/header.scss";
+@import "./layouts/pages/posts.scss";
+@import "./layouts/pages/photos.scss";
+@import "./layouts/pages/todos.scss";

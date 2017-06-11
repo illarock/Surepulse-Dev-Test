@@ -1,0 +1,47 @@
+.post-wrap {
+  font-size: 0;
+  .post-col {
+    min-width: 100%;
+    float: none;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: text-top;
+  }
+  .post-card {
+    padding: 20px;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+
+  }
+  h4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .label-link {
+    text-decoration: none;
+    &:hover {
+      span {color: black;}
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .post-wrap {
+    .post-col {
+      min-width: inherit;
+    }
+    .post-card {
+      min-height: 330px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .post-wrap {
+    .post-card {
+      min-height: 300px;
+    }
+  }
+}

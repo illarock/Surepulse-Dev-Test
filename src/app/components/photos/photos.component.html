@@ -1,0 +1,15 @@
+<h1>PHOTOS</h1>
+<div *ngIf="photos">
+  <div class="img-wrap row">
+    <div class="col-lg-2 col-sm-3 col-xs-4 img-col" *ngFor="let photo of photos| paginate: { itemsPerPage: 18, currentPage: p }">
+        <div class="thumbnail">
+        <img src="{{photo.thumbnailUrl}}" alt="...">
+        <div class="caption">
+          <h6>{{photo.title}}</h6>
+          <p><a href="{{photo.url}}" class="btn btn-primary" target="_blank" role="button">View Image</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="list-pag" directionLinks="false"></pagination-controls>
+</div>

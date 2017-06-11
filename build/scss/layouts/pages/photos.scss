@@ -1,0 +1,26 @@
+.img-wrap {
+  font-size: 0;
+  .img-col {
+    min-width: 100%;
+    float: none;
+    display: inline-block;
+    vertical-align: text-top;
+    img {
+      width: 100%;
+    }
+  }
+  h6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .img-wrap {
+    .img-col {
+      min-width: inherit;
+    }
+  }
+}

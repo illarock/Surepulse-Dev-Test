@@ -1,0 +1,14 @@
+<h1>POSTS</h1>
+<div *ngIf="posts">
+  <div class="post-wrap row">
+    <div class="col-md-4 col-xs-6 post-col" *ngFor="let post of posts| paginate: { itemsPerPage: 6, currentPage: p }">
+      <div class="post-card">
+        <h4>{{post.title}}</h4>
+        <span class="label label-primary">ID: {{post.id}}</span> <span class="label label-success">User: {{post.id}}</span>
+        <hr>
+        <p>{{post.body}}</p>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="list-pag" directionLinks="false"></pagination-controls>
+</div>

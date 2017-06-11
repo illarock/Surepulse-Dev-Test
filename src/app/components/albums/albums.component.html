@@ -1,0 +1,10 @@
+<h1>ALBUMS</h1>
+<div *ngIf="albums">
+<ul class="list-group" *ngFor="let album of albums| paginate: { itemsPerPage: 10, currentPage: p }">
+  <li class="list-group-item">
+    <span class="badge">ID: {{album.id}}</span>
+    {{album.title}}
+  </li>
+</ul>
+<pagination-controls (pageChange)="p = $event" class="list-pag" directionLinks="false"></pagination-controls>
+</div>

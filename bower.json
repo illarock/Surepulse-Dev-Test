@@ -1,0 +1,20 @@
+{
+  "name": "surepulse",
+  "description": "",
+  "main": "",
+  "authors": [
+    "illarock <illarock@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/illarock/-Surepulse-Dev-Test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

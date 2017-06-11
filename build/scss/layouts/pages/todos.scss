@@ -1,0 +1,16 @@
+.todos-table {
+  tr {
+    td,
+    th {
+      &:last-child() {
+        text-align: center;
+      }
+    }
+  }
+  .glyphicon-ok {
+    color: #5cb85c;
+  }
+  .glyphicon-remove {
+    color: #d9534f;
+  }
+}

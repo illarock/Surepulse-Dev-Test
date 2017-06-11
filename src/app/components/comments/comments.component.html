@@ -1,0 +1,17 @@
+<h1>COMMENTS</h1>
+<div *ngIf="comments">
+  <div class="post-wrap row">
+    <div class="col-md-4 col-xs-6 post-col" *ngFor="let comment of comments| paginate: { itemsPerPage: 6, currentPage: p }">
+      <div class="post-card">
+        <h4>{{comment.name}}</h4>
+        <h5></h5>
+        <span class="label label-success">Email: {{comment.email}}</span>
+        <span class="label label-primary">ID: {{comment.id}}</span>
+        <span class="label label-danger">Post ID: {{comment.postId}}</span>
+        <hr>
+        <p>{{comment.body}}</p>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="list-pag" directionLinks="false"></pagination-controls>
+</div>
