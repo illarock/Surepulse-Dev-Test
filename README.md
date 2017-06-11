@@ -11,6 +11,8 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Bower and gulp
 
 Location is at the root.
+Run `Bower install` to get Bootstrap and jquery
+Run `gulp` the build folder includes scss/js
 
 ## Build
 
